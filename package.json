@@ -1,0 +1,19 @@
+{
+  "name": "openmusic-api-consumer",
+  "version": "1.0.0",
+  "description": "queue consumer for exporting openmusic playlist",
+  "main": "src/Consumer.js",
+  "scripts": {
+    "start": "node src/Consumer.js",
+    "dev": "nodemon src/Consumer.js"
+  },
+  "author": "restu indera dwihandoko",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
+    "nodemailer": "^6.9.0",
+    "pg": "^8.8.0"
+  },
+  "type": "module"
+}
