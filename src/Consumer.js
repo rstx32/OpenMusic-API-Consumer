@@ -1,9 +1,11 @@
-import dotenv from 'dotenv'
-dotenv.config({ path: '.env' })
-import amqp from 'amqplib'
 import PlaylistService from './PlaylistsService.js'
 import MailSender from './MailSender.js'
 import Listener from './Listener.js'
+import amqp from 'amqplib'
+import dotenv from 'dotenv'
+
+dotenv.config({ path: '.env' })
+
 ;(async () => {
   const playlistService = new PlaylistService()
   const mailSender = new MailSender()
